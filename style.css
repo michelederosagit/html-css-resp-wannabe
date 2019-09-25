@@ -1,0 +1,155 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row > .left, #lezioni .row > .right{
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row > .left,
+#steps .row > .central,
+#steps .row > .right{
+  float: left;
+  width: 33%;
+}
+
+#steps{
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row > .first,
+#why .row > .second,
+#why .row > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color:#428bca;
+  border-radius:50%;
+  padding:30px
+}
+
+/* COMMON */
+
+[background="grey"]{
+  background-color: #f9f9f9;
+}
+
+img{
+  height: 200px;
+}
+
+.clear {
+  clear:both;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* MEDIA QUERY MAX-WIDTH 420px */
+
+@media screen and (max-width: 420px) {
+
+  * {
+     margin: 0;
+     box-sizing: border-box;
+   }
+
+  .row {
+    width: 100%;
+    margin: 0;
+    padding: 0px 10% 10% 10%;
+  }
+
+  .row h3 {
+    padding: 3% 3%;
+  }
+
+  .row div {
+    border-bottom: 3px solid grey;
+    padding: 20px 0px 20px 0px;
+  }
+
+  h1 {
+    color: grey;
+    width: 75%;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  #lezioni .row {
+    padding-top: 10%;
+  }
+
+  #lezioni, #why {
+    background-color: #fff;
+  }
+
+  #lezioni .raw {
+    padding-top: 10%;
+  }
+
+  /* Width 100% e Float None */
+  #lezioni > .row > .left, #lezioni .row > .right {
+    float: none;
+    width: 100%;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    float: none;
+    width: 100%;
+  }
+
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: none;
+    width: 100%;
+  }
+
+  #why .row img {
+    padding: 0;
+  }
+
+  #why .row > .first, #why .row > .second, #why .row > .third {
+    margin-top: 20px;
+  }
+
+  /* Imposto larghezza immagini */
+  img {
+   width: 50%;
+   height: auto;
+  }
+
+  /* Nascondo Clear ed hr */
+  div.clear, hr {
+    display: none;
+  }
+
+}
